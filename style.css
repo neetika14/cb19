@@ -1,5 +1,45 @@
 html,
 body {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+    background-size: cover;
+    backdrop-filter:  brightness(50%);
+}
+
+canvas {
+    display: block;
+}
+
+#canvas_container {
+    width: 100%;
+    height: 100vh;
+}
+
+button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9em;
+    background: #000000;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+body {
   height: 100%;
 }
 
@@ -13,7 +53,7 @@ nav {
   position: absolute;
   top: 10%;
   right: 0;
-  left: 40;
+  left: 0;
   width: 319px;
   display: table;
   margin: 0 auto;
@@ -112,4 +152,28 @@ nav a:nth-child(2):hover ~ #indicator {
 nav a:nth-child(3):hover ~ #indicator {
   left: 70%;
   background: linear-gradient(130deg, purple, palevioletred);
+}
+.btn-6 {
+    background: rgb(247,150,192);
+  background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+    line-height: 20px;
+    padding: 0;
+    border: none;
+  }
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 10px;
+   box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
 }
