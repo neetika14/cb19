@@ -5,7 +5,7 @@ html, body{
 }
 html{background: linear-gradient(to bottom, rgb(3,77,114) 1%,rgb(113,49,99) 100%);}
 body{
-  overflow:hidden;
+  position:fixed;
   width: 100%;
 }
 .scene{
@@ -112,7 +112,6 @@ border-top: 2px solid rgba(255,255,255,0.5);
   left: 3px;
   border-radius: 50%;
   top: -38px; 
-  overflow:hidden; 
   box-shadow: 0px -4px 0px #111, 0px -17px 17px rgba(155, 227, 250, 0.13);
   /* this fixes the overflow:hidden in Chrome */
 -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
@@ -139,7 +138,6 @@ border-top: 2px solid rgba(255,255,255,0.5);
   border-radius: 50%;
   top: -5px;
   border: 1px solid #3a6075;
-  overflow: hidden;
   box-shadow: inset 0px -1px 0px #BED3DF, 0px 1px 0px rgba(140, 166, 185, 0.77);
 }
 .rings ul {
@@ -497,7 +495,7 @@ position: absolute;
 }
 .battery{
 position: absolute;
-top: 20px;
+top: -60px;
 left: 20px;
 width: 80px;
 height: 34px;
@@ -531,7 +529,7 @@ animation-delay: 2s;
 .rec{
   position:absolute;
   right: 30px;
-  top: 20px;
+  top: -60px;
   color:#fff;
   font-size:30px;
 }
@@ -546,7 +544,7 @@ animation-delay: 2s;
 }
 .meta{
   position:absolute;
-  bottom:10px;
+  bottom:100px;
   right:30px;
   color:#fff;
   font-size:20px;
@@ -591,7 +589,7 @@ animation-delay: 2s;
 }
 .timer{
   position:absolute;
-  bottom:30px;
+  bottom:125px;
   left:30px;
   color:#fff;
   font-size:20px;
@@ -601,7 +599,7 @@ animation-delay: 2s;
 
 #title {
   position: relative;
-  top: 20%;
+  top: 15%;
   left: 0;
   right: 0;
   color: #FFF;
@@ -614,7 +612,27 @@ animation-delay: 2s;
   padding-left: 10px;
 }
 #title span {
-  background: -webkit-linear-gradient(white, #3e5265);
+  background: -webkit-linear-gradient(white, #c1c7cd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#title2 {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 4px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title2 span {
+  background: -webkit-linear-gradient(white, #03e9f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -624,8 +642,7 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  position: fixed;
-  background: black;
+  background: #24395C;
 }
 
 .youtube {
@@ -688,8 +705,7 @@ button:hover {
 
 body {
   margin: 0;
-  background-color: #101010;
-  overflow: hidden;
+  background-color: #24395C;
 }
 
 nav {
