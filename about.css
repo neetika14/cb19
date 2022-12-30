@@ -326,7 +326,7 @@ nav a:nth-child(3):after {
 }
 
 nav a:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 nav a:hover:before,

@@ -608,13 +608,13 @@ animation-delay: 2s;
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
-  font-size: 32px;
-  letter-spacing: 4px;
+  font-size: 30px;
+  letter-spacing: 3px;
   margin-top: -60px;
   padding-left: 10px;
 }
 #title span {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(white, #3e5265);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -688,7 +688,7 @@ button:hover {
 
 body {
   margin: 0;
-  background-color: #292929;
+  background-color: #101010;
   overflow: hidden;
 }
 
